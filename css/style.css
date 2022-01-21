@@ -13,7 +13,7 @@ html{
     padding: 0 80px;
     margin: auto;
 }
-.navbar{
+.nav-bar{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -21,39 +21,39 @@ html{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease-in-out;
 }
-.navbar.sticky{
+.nav-bar.sticky{
     padding: 30px 0;
     background: #121212;
 }
-.navbar .max-width{
+.nav-bar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.nav-bar .logo a{
     font-size: 35px;
     font-weight: 600;
     color: #fff;
 }
-.navbar .logo a span{
+.nav-bar .logo a span{
     color: crimson;
     transition: all 0.3s ease-in-out;
 }
-.navbar.sticky .logo a span{
+.nav-bar.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+.nav-bar .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.nav-bar .menu li a{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px ;
     transition: color 0.3s ease-in-out;
 }
-.navbar .menu li a:hover{
+.nav-bar .menu li a:hover{
     color: crimson;
 
 }
@@ -114,7 +114,7 @@ html{
 /* -------------Similar Code--------------- */
 .about,
 .skills,
-.education,
+.education,.projects,
 .contact,footer{
     font-family: 'Poppins', sans-serif;
 }
@@ -337,10 +337,59 @@ html{
 .education .education-content .column span{
     color: crimson;
 }
+/* -----------------Projects and Tools----------- */
+.projects{
+    padding: 45px;
+    background: rgb(245, 235, 235);
+}
+.projects .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.projects .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 340px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.projects .projects-content .column .project-heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+.projects .projects-content .column .tools-heading{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.projects .projects-content .column li{
+    list-style-type: none;
+    font-size: 25px;
+
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.projects .projects-content .column p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 /* ----------------Contact Section-------------- */
 .contact{
     padding: 45px;
-    background: rgb(245, 235, 235);
+    background: rgb(255, 255, 255);
 }
 .contact .title{
     position: relative;
@@ -496,7 +545,7 @@ footer span a:hover{
     .menu-btn i.active::before{
         content: "\f00d";
     } 
-    .navbar .menu{
+    .nav-bar .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -507,13 +556,13 @@ footer span a:hover{
         padding: 80px;
         transition: all 0.3s ease-in-out;
     }
-    .navbar .menu.active{
+    .nav-bar .menu.active{
         top: 0;
     }
-    .navbar .menu li{
+    .nav-bar .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .nav-bar .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;

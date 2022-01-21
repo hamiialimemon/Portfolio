@@ -8,19 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Hamid Ali | Portfolio</title>
 </head>
 <body>
-    <nav class="navbar sticky">
+    <nav class="nav-bar sticky">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#home">Portfo<span>lio.</span></a></div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu-btn">
@@ -62,8 +64,8 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My Creative Skills and Experiences</div>
-                    <p>I am Hamid Ali and I am Full Stack Web developer I have Experience in HTML, CSS,   JavaScript. And Experience in Django to create Web Servers and Have an Experience to ReactJS. I have done many projects like Travel Agency, Food Resturant, Content Based Image Retervial as my Final year project. </p>
-                    <a href="#">Read More</a>
+                    <p>I have Experience in HTML, CSS,   JavaScript. And Experience in Django to create Web Servers and Have an Experience to ReactJS. I have done many projects like Travel Agency, Food Resturant, Content Based Image Retervial as my Final year project. </p>
+                    <a href="#projects">Read More</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -128,14 +130,78 @@
             </div>
         </div>
     </section>
-    <!-- -----------Contact Section ------------------>
+    <!------------------Projects and Tools Section------------>
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects and Tools</h2>
+            <div class="projects-content">
+                <div class="column">
+                    <h2 class="project-heading">Projects: </h2>
+                    <ul>
+                        <li>Content Based Image Retervial</li>
+                        <p>I have made CBIR Based Image Retervial. Which is Totally made on pure Python. for the webserver I have used Flask and Front-end is made on pure HTML,CSS and JavaScript</p>
+                        <li>Travel Agency Website</li>
+                        <p>Travel Agency Website this is Totally based on Pure HTML,CSS and JavaScript</p>
+                        <li>Food Resturant Website</li>
+                        <p>Food Resturant Website this is Totally based on Pure HTML,CSS and JavaScript</p>
+                    </ul>
+                    <h2 class="tools-heading">Tools: </h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <i class="fab fa-html5 fa-2x"></i>
+                            </li>
+                            <li class="nav-item">
+                              <i class="fab fa-css3 fa-2x"></i>
+                            </li>
+                            <li class="nav-item">
+                              <i class="fab fa-sass fa-2x"></i>
+                            </li>
+                            <li class="nav-item">
+                              <i class="fab fa-bootstrap fa-2x"></i>
+                            </li>
+                
+                            <li class="nav-item">
+                              <i class="fab fa-js fa-2x"></i>
+                            </li>
+                
+                            <li class="nav-item">
+                              <i class="fab fa-react fa-2x"></i>
+                            </li>
+                
+                            <li class="nav-item">
+                              <i class="fab fa-python fa-2x"></i>
+                            </li>
+                
+                            <li class="nav-item">
+                              <i class="fab fa-npm fa-2x"></i>
+                            </li>
+                
+                            <li class="nav-item">
+                              <i class="fab fa-git fa-2x"></i>
+                            </li>
+                
+                            <li class="nav-item">
+                              <i class="fab fa-github fa-2x"></i>
+                            </li>
+                
+                          </ul>
+                
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------Contact Section ------------------>
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact Me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Hey, I am Hamid Ali. Full Stack Web Developer. for my services or any Querey, Feel free to Contact Me.</p>
+                    <p>For my services or any Querey, Feel free to Contact Me.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
